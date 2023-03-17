@@ -29,7 +29,7 @@ a {
     align-items: center;
     justify-content: space-between;
     padding: 10px 5%;
-    background-color: midnightblue;
+    background-color: rgb(21, 21, 95);
 }
 .navbar .logo {
     display: flex;
@@ -47,7 +47,7 @@ a {
     display: flex;
 }
 .menu li {
-    margin-left:50px;
+    margin-right: 50px;
     position: relative;
     list-style: none;
     display: flex;
@@ -61,7 +61,7 @@ a {
 }
 .menu li a:hover {
     color: orange;
-    font-size: 15px;
+    font-size: 10px;
 }
 .menu li:hover::after {
     content: "";
@@ -72,22 +72,11 @@ a {
     background-color: #f2f2f2;
     border-radius: 50%;
 }
-.number {
-    font-size: 14px;
-    color: #fff;
-    padding: 10px 25px;
-    background: linear-gradient(orange,midnightblue);
-    border-radius: 60px;
-}
-.number a {
-    color: #fff;
-}
 
 .home {
-    padding: 0 5%;
+    padding: 50px 5%;
     margin: 50px 0;
     margin-top: 1px;
-    display: flex;
     align-items: center;
     justify-content: space-between;
     height: calc(50vh - 100px);
@@ -98,14 +87,14 @@ a {
 }
 
 .home .left h1 {
-    font-size: 30px;
+    font-size: 35px;
     color:#000;
     font-weight: 600;
     padding: 1px;
     margin-bottom: 1px;
 }
 .home .left p {
-    font-size: 14px;
+    font-size: 18px;
     color: #000;
 }
 
@@ -115,13 +104,28 @@ a {
     background:transparent;
 }
 .button-link a {
-    font-size: 14px;
+    font-size: 8px;
     color: #fff;
     padding: 10px 25px;
-    background: linear-gradient(orange,midnightblue);
-    border-radius: 60px;
+    background-color:#f705a6;
+    box-shadow:  0 0 10px rgba(0,0,0,0.4);
+    border-radius: 10px;
     text-transform: uppercase;
     line-height: 1px;
+}
+.button-link a:hover {
+    color:#fff;
+    font-size: 15px;
+}
+
+.button-link a:hover::after {
+    content: "";
+    position: absolute;
+    height: 30px;
+    z-index: -1;
+    width: 30px;
+    background-color: #f2f2f2;
+    border-radius: 50%;
 }
 
 .learn {
@@ -167,29 +171,220 @@ a {
 .tabsec h1 span {
     color: midnightblue;
 }
-table{
-    border-collapse: collapse;
-    min-width: 400px;
-    width: auto;
-    box-shadow: 0 5px 50px rgba(0, 0, 0, 0.15);
-    cursor: pointer;
-    margin: 1% auto;
-    border: 2px solid midnightblue;
+/*communité css*/
+
+.home-comm {
+    padding: 0 5%;
+    margin: 50px 0;
+    margin-top: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: calc(80vh - 200px);
+    background-color: #ddd;
 }
-thead tr{
-    background-color: midnightblue;
-    color: #fff;
-    text-align: left;
-        }
-th,td {
-    padding: 15px 15px;     
-        }
-tbody tr, td, th {
-    border: 1px solid #ddd;
+.home-comm .left {
+    width: 55%;
 }
-tbody tr:nth-child(even){
-    background-color: #f3f3f3;
+.home-comm .right {
+    width: 30%;
+    height: 50%;
 }
+.home-comm .right  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow:  0 0 10px rgba(0,0,0,0.4);
+}
+.home-comm .left h4 {
+    font-weight: 500;
+    font: 25px;
+    margin-bottom: 10px;
+    color: #000;
+    text-transform: capitalize;
+}
+.home-comm .left p {
+    font-size: 14px;
+    color: #999;
+}
+
+/*les membres*/
+
+section {
+    padding: 0 5%;
+    margin-bottom:50px;
+}
+.title {
+    text-transform: uppercase;
+    color: #4f4f4f;
+    font-size: 50px;
+    position: relative;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+.title::after {
+    content: "";
+    position: absolute;
+    top: 80%;
+    left: -30px;
+    z-index: -2;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background: linear-gradient(#53B758,#79BC23);
+}
+.title::before {
+    content: "";
+    position: absolute;
+    top: 32px;
+    left: -15px;
+    z-index: -1;
+    height: 30px;
+    width: 30px;
+    background-color: #fff;
+}
+.small_title {
+    font-size: small;
+    color: #999;
+}
+.list_user {
+    margin: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.user {
+    width:270px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.user img {
+    border-radius: 100%;
+    box-shadow: 0 0 25px rgba(0,0,0,0.1);
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+/*les cours CSS*/
+
+section {
+    padding: 0 5%;
+    margin-bottom:50px;
+}
+.title {
+    text-transform: uppercase;
+    color: #4f4f4f;
+    font-size: 50px;
+    position: relative;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+.title::after {
+    content: "";
+    position: absolute;
+    top: 80%;
+    left: -30px;
+    z-index: -2;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background: linear-gradient(#53B758,#79BC23);
+}
+.title::before {
+    content: "";
+    position: absolute;
+    top: 32px;
+    left: -15px;
+    z-index: -1;
+    height: 30px;
+    width: 30px;
+    background-color: #fff;
+}
+.small_title {
+    font-size: small;
+    color: #999;
+}
+.list_cours {
+    margin: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.cours {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.cours img {
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.1);
+    width:270px;
+    padding: 10px;
+    width: 250px;
+    margin-bottom: 10px;
+}
+
+/* s'abonner */
+
+.cours-abon {
+    padding: 0 5%;
+    margin: 50px 0;
+    margin-top: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: calc(80vh - 200px);
+    background-color: #ddd;
+}
+.cours-abon .left {
+    width: 40%;
+}
+.cours-abon .right {
+    width: 55%;
+    height: 100%;
+}
+.cours-abon .right  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow:  0 0 10px rgba(0,0,0,0.4);
+}
+.cours-abon .left h4 {
+    font-weight: 500;
+    font: 25px;
+    margin-bottom: 10px;
+    color: #000;
+    text-transform: capitalize;
+}
+.cours-abon .left p {
+    font-size: 14px;
+    color: #999;
+}
+
+.form-cours {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+}
+.form-cours input {
+    margin:  10px 0;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: #f2f2f2;
+    border: 1px solid midnightblue;
+    outline: 0;
+    resize: none;
+    width: 100%;
+}
+.form_btn {
+    width: fit-content;
+    margin-top: 20px;
+}
+
 /*Contact CSS*/
 .form-image {
     display: flex;
@@ -224,7 +419,7 @@ tbody tr:nth-child(even){
     border-radius: 30px;
 }
 footer {
-    background-color: midnightblue;
+    background-color: rgb(21, 21, 95);
     color: #fff;
     text-align: center;
     font-size: 14px;
