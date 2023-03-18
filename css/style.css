@@ -6,6 +6,7 @@
 }
 .wripper{
     background-color:#fff;
+    
 }
 .contener{
     padding: 10px 5%;
@@ -38,6 +39,7 @@ a {
 .navbar .logo img {
     width: 50px;
     height: 30px;
+    margin-right: 10px;
 }
 .navbar .logo h1 {
     font-size: 30px;
@@ -81,19 +83,19 @@ a {
     justify-content: space-between;
     height: calc(50vh - 100px);
 }
-.home .left {
+.home .centre {
     width: 100%;
     text-align: center;
 }
 
-.home .left h1 {
+.home .centre h1 {
     font-size: 35px;
     color:#000;
     font-weight: 600;
     padding: 1px;
     margin-bottom: 1px;
 }
-.home .left p {
+.home .centre p {
     font-size: 18px;
     color: #000;
 }
@@ -197,14 +199,14 @@ a {
 }
 .home-comm .left h4 {
     font-weight: 500;
-    font: 25px;
+    font-size: 25px;
     margin-bottom: 10px;
     color: #000;
     text-transform: capitalize;
 }
 .home-comm .left p {
     font-size: 14px;
-    color: #999;
+    color: #000;
 }
 
 /*les membres*/
@@ -386,17 +388,30 @@ section {
 }
 
 /*Contact CSS*/
-.form-image {
+.contact h1 {
+    font-size: 35px;
+    color:#000;
+    font-weight: 600;
+    padding: 1px;
+    margin-bottom: 1px;
+}
+.contact p {
+
+    font-size: 18px;
+    color: #000;
+}
+.form-cont {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 10px 15px;
+    
 }
-.form-image  form {
-    width: 35%;
+.form-cont  form {
     display: flex;
     flex-direction: column;
 }
-.form-image  form input , textarea , select {
+.form-cont  form input , textarea , select {
     margin:  10px 0;
     padding: 15px;
     border-radius: 15px;
@@ -406,6 +421,23 @@ section {
     resize: none;
     width: 100%;
 }
+.inp-cont {
+    display: flex;
+}
+.inpu {
+    flex-direction: column;
+    padding: 0 15px;
+    width: 100%;
+}
+
+select {
+    display: block;
+}
+
+textarea {
+    width: 50%;
+}
+
 .form_btn {
     width: fit-content;
     margin-top: 20px;
@@ -423,8 +455,10 @@ footer {
     height: calc(60vh - 200px);
     color: #fff;
     text-align: left;
-    font-size: 14px;
-    padding: 10px;
+    padding: 10px 5%;
+    margin: 50px 0;
+    align-items: center;
+    justify-content: space-between;
 }
 .small_menu {
     display: none;
