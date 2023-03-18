@@ -148,7 +148,7 @@ a {
 }
 .learn .right h4 {
     font-weight: 500;
-    font: 25px;
+    font-size: 25px;
     margin-bottom: 10px;
     color: #000;
     text-transform: capitalize;
@@ -157,19 +157,18 @@ a {
     width: 40%;
 }
 
-
-.tabsec{
-    padding: 10px 25px;
+.about {
+    padding: 20px;
+    justify-items: center;
 }
-
-.tabsec h1 {
-    font-size: 60px;
-    color: orange;
-    font-weight: 600;
-    padding: 0;
+.about h3 {
+    font-size: 25px;
 }
-.tabsec h1 span {
-    color: midnightblue;
+.about p {
+    font-size: 20px;
+}
+.about ul{
+    padding-left: 15px;
 }
 /*communité css*/
 
@@ -332,7 +331,7 @@ section {
 
 .cours-abon {
     padding: 0 5%;
-    margin: 50px 0;
+    margin: 0;
     margin-top: 1px;
     display: flex;
     align-items: center;
@@ -341,48 +340,49 @@ section {
     background-color: #ddd;
 }
 .cours-abon .left {
-    width: 40%;
+    width: 55%;
 }
 .cours-abon .right {
-    width: 55%;
-    height: 100%;
-}
-.cours-abon .right  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    box-shadow:  0 0 10px rgba(0,0,0,0.4);
+    width: 40%;
 }
 .cours-abon .left h4 {
-    font-weight: 500;
-    font: 25px;
+    font-weight: 500px;
+    font-size: 25px;
     margin-bottom: 10px;
     color: #000;
     text-transform: capitalize;
 }
 .cours-abon .left p {
-    font-size: 14px;
-    color: #999;
+    font-size: 18px;
+    color: #000;
 }
 
 .form-cours {
-    width: 35%;
+    width: 100%;
     display: flex;
     flex-direction: column;
+    
 }
 .form-cours input {
     margin:  10px 0;
     padding: 15px;
-    border-radius: 15px;
-    background-color: #f2f2f2;
-    border: 1px solid midnightblue;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #c0bcbc;
     outline: 0;
     resize: none;
     width: 100%;
 }
-.form_btn {
-    width: fit-content;
-    margin-top: 20px;
+#btn-form {
+    font-size: 15px;
+    color: #fff;
+    padding: 10px 25px;
+    background-color:#f705a6;
+    box-shadow:  0 0 10px rgba(0,0,0,0.4);
+    border: none;
+    border-radius: 10px;
+    line-height: 1px;
+    height: 30px;
 }
 
 /*Contact CSS*/
@@ -396,7 +396,7 @@ section {
     display: flex;
     flex-direction: column;
 }
-.form-image  form input , textarea {
+.form-image  form input , textarea , select {
     margin:  10px 0;
     padding: 15px;
     border-radius: 15px;
@@ -420,8 +420,9 @@ section {
 }
 footer {
     background-color: rgb(21, 21, 95);
+    height: calc(60vh - 200px);
     color: #fff;
-    text-align: center;
+    text-align: left;
     font-size: 14px;
     padding: 10px;
 }
