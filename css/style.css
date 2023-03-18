@@ -138,7 +138,7 @@ a {
     align-items: center;
     justify-content: space-between;
     height: calc(80vh - 200px);
-    background-color: #ddd;
+    background-color: #EEEE;
 }
 .learn .left {
     width: 30%;
@@ -182,7 +182,7 @@ a {
     align-items: center;
     justify-content: space-between;
     height: calc(80vh - 200px);
-    background-color: #ddd;
+    background-color: #EEEE;
 }
 .home-comm .left {
     width: 55%;
@@ -339,7 +339,7 @@ section {
     align-items: center;
     justify-content: space-between;
     height: calc(80vh - 200px);
-    background-color: #ddd;
+    background-color: #EEEE;
 }
 .cours-abon .left {
     width: 55%;
@@ -392,11 +392,11 @@ section {
     font-size: 35px;
     color:#000;
     font-weight: 600;
-    padding: 1px;
+    padding: 0;
     margin-bottom: 1px;
 }
 .contact p {
-
+    padding-left: 22px;
     font-size: 18px;
     color: #000;
 }
